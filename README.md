@@ -29,7 +29,7 @@ ODB 於 NODASS 工作坊使用的課程講義與程式碼 (2026-07-23)
   - [地理資訊](https://colab.research.google.com/github/ODBapp/2026_NODASS_workshop/blob/main/src/geo/raster_comparison.ipynb)
   - [海洋生物](https://colab.research.google.com/github/ODBapp/2026_NODASS_workshop/blob/main/src/bio/20260723_ODB_biodata_demo.ipynb)
   - [海洋熱浪](https://colab.research.google.com/github/ODBapp/2026_NODASS_workshop/blob/main/src/mhw/20260723_MHW.ipynb)
-  - 時間序列
+  - [時間序列](https://colab.research.google.com/github/ODBapp/2026_NODASS_workshop/blob/main/src/timeseries/timeseries2026.ipynb)
 - `requirements.txt` 說明
   - 若是在本機執行程式碼，請先安裝程式內所需要的套件：
     ```bash
