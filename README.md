@@ -11,7 +11,7 @@ ODB 於 NODASS 工作坊使用的課程講義與程式碼 (2026-07-23)
 
 ```markdown
 
-/2025_NODASS_workshop  
+/2026_NODASS_workshop  
 ├── lectures/               # 課程講義 (PDF)
 ├── src/                    # 程式碼與資料
 │   ├── bio/                # 海洋生物課程使用的程式和資料
