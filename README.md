@@ -23,9 +23,25 @@ ODB 於 NODASS 工作坊使用的課程講義與程式碼 (2026-07-23)
 ```
 
 
+### 💻 在自己電腦上執行
+
+課堂上建議直接用下方的 Colab 連結，不需要安裝任何東西。
+若要在本機執行：
+
+```bash
+git clone https://github.com/ODBapp/2026_NODASS_workshop.git
+cd 2026_NODASS_workshop
+python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+jupyter lab
+```
+
+> 已驗證可執行四本 notebook 的版本組合記錄在 `requirements.txt` 開頭。
+
+
 ### 📝 附註
 - [工作坊官網](https://sites.google.com/view/nodassbigdata/index)
-- Colab 連結
+- Colab 連結（點開即可執行，第一格會自動下載本教材）
   - [地理資訊](https://colab.research.google.com/github/ODBapp/2026_NODASS_workshop/blob/main/src/geo/raster_comparison.ipynb)
   - [海洋生物](https://colab.research.google.com/github/ODBapp/2026_NODASS_workshop/blob/main/src/bio/20260723_ODB_biodata_demo.ipynb)
   - [海洋熱浪](https://colab.research.google.com/github/ODBapp/2026_NODASS_workshop/blob/main/src/mhw/20260723_MHW.ipynb)
