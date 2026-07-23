@@ -1,0 +1,25 @@
+# --- notebook 執行後產生的檔案 ---
+# 這些是課程當下由程式產生的中間產物，不需要進版控。
+# （學員跑完 notebook 後 git status 會變乾淨，不會誤把幾 MB 的產物 commit 回來）
+
+# geo：ODB GEBCO API 下載的點資料，以及輸出的 .asc / .prj / .tif
+src/geo/gebco_odb_sample.csv
+src/geo/output/
+
+# bio：以執行日期命名的合併結果 biodata_YYYY-MM-DD.csv
+#（注意：不可寫成 biodata_*.csv，那會誤傷版控中的原始資料檔）
+src/bio/biodata_[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9].csv
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# --- 編輯器 / 作業系統 ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

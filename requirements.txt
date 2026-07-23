@@ -1,0 +1,42 @@
+# 2026_NODASS_workshop — 本機執行所需套件
+#
+# Colab 不需要這個檔案（多數套件已預裝，各 notebook 內另有 !pip 指令）。
+# 這份清單是給「在自己電腦上跑」的人。
+#
+# 使用方式：
+#     python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
+#     pip install -r requirements.txt
+#     jupyter lab
+#
+# 版本策略：這裡只寫「已知可運作的最低版本」而不鎖死（==），
+# 因為 cartopy / netCDF4 / rasterio 的 wheel 會隨作業系統與 Python 版本而異，
+# 鎖死反而容易讓部分學員裝不起來。
+#
+# 已完整驗證可執行四本 notebook 的組合（2026-07-23，Python 3.12.13）：
+#     numpy 2.5.1        pandas 3.0.5       matplotlib 3.11.1
+#     scipy 1.18.0       statsmodels 0.14.6 seaborn 0.13.2
+#     requests 2.34.2    cartopy 0.25.0     netCDF4 1.7.4
+#     rasterio 1.5.0     plotly 6.9.0
+# 注意 pandas 已是 3.x，本教材在 pandas 3.0.5 下四本皆可正常執行。
+
+# --- 全部課程共用 ---
+jupyterlab>=4.0
+numpy>=1.26
+pandas>=2.0
+matplotlib>=3.8
+
+# --- geo：地理資訊 (src/geo/raster_comparison.ipynb) ---
+netCDF4>=1.6            # 讀取 ETOPO NetCDF
+rasterio>=1.3           # 輸出 GeoTIFF
+
+# --- bio：海洋生物 (src/bio/20260723_ODB_biodata_demo.ipynb) ---
+plotly>=5.18            # 互動式長條圖
+
+# --- mhw：海洋熱浪 (src/mhw/20260723_MHW.ipynb) ---
+requests>=2.31          # 呼叫 ODB MHW API
+
+# --- timeseries：時間序列 (src/timeseries/timeseries2026.ipynb) ---
+scipy>=1.11             # pearsonr 互相關
+statsmodels>=0.14       # STL 時間序列分解
+seaborn>=0.13           # boxplot / stripplot
+cartopy>=0.22           # 繪製跨換日線的太平洋地圖
